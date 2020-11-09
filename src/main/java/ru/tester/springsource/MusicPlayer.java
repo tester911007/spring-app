@@ -48,4 +48,12 @@ public class MusicPlayer {
         System.out.printf("playing: %s. ", music.getSong());
         System.out.println();
     }
+
+    private void doInit(){
+        System.out.println("Init object");
+    }
+
+    private void doDestroy(){
+        System.out.println("Destroy object");
+    }
 }
