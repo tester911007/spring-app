@@ -21,7 +21,8 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ru.tester.springsource.MusicPlayer">
+          class="ru.tester.springsource.MusicPlayer"
+          scope="prototype"> <!-- по умолчанию Singleton, prototype - каждый раз создаётся новый объект -->
         <!-- <constructor-arg ref="musicBean"/> -->
         <property name="music" ref="musicBean"/>
 
